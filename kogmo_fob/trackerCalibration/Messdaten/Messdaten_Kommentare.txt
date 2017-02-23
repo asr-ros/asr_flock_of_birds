@@ -1,0 +1,42 @@
+12 April
+left_hand_all_crt_off
+right_hand_all_crt_off
+setpoints_freezer:
+	Sollwerte des Kühlschranks
+right_hand_freezer
+right_hand_some_crt_on:
+	Die beiden Monitore rechts vom Kühlschrank waren an
+left_hand_some_crt_on_offset_z_plus_30:
+	30cm über der Arbeitsfläche
+setpoints:
+	Sollwerte der Arbeitsplatte
+left_hand_freezer
+
+13 April
+right_hand_freezer_2
+right_hand_freezer_one_level:
+	Nur eine Ebene im Kühlschrank (18 Messpunkte)
+right_hand_freezer_one_level_more_points:
+	Noch mehr Punkte auf einer Ebene (54 Messpunkte)
+right_hand_freezer_one_level_more_points_2:
+	Obere Kühlschrankebene (30 Messpunkte)
+right_hand_freezer_1_and_2:
+	Vereinigung der Punktmengen von right_hand..._more_points und _more_points_2
+desk_and_freezer:
+	Vereinigung der Punktmengen von left_hand_some_crt_on und right_hand_freezer..more_points
+left_hand_desk
+Differ_Right:
+Differ_Left:
+	Jeweils acht Messpunkte, mit der Spitze am gleichen Punkt und jeweils den Tracker um den
+	Punkt gedreht
+Differ_Both:
+	Die beiden Differ Dateien zusammengefügt
+left_hand_metal_inside:
+	Die Sollpunkte 7 bis 22 (Desktop) Schneckenförmig abgefahren (7,8,9,10,14...) mit
+	Messpunkten mittig zischen den Sollpunkten. Einige Metallgegenstände befinden sich
+	in dem Feld zwischen den Sollpunkten 12,13,16,17
+left_hand_no_metal_inside:
+	Analog nur ohne Metallgegenstände
+left_hand_wm_wom_inisde:
+	Zusammenlegung von metal_inside und no_metal_inside
+	

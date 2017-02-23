@@ -1,0 +1,764 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>qt_Tracker_Calibration</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>qt_Tracker_Calibration</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>500</width>
+            <height>640</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Tracker Calibration</string>
+    </property>
+    <property name="sizeGripEnabled">
+        <bool>true</bool>
+    </property>
+    <widget class="QGroupBox">
+        <property name="name">
+            <cstring>groupBox2</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>170</x>
+                <y>10</y>
+                <width>150</width>
+                <height>190</height>
+            </rect>
+        </property>
+        <property name="sizePolicy">
+            <sizepolicy>
+                <hsizetype>0</hsizetype>
+                <vsizetype>5</vsizetype>
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+            </sizepolicy>
+        </property>
+        <property name="minimumSize">
+            <size>
+                <width>150</width>
+                <height>0</height>
+            </size>
+        </property>
+        <property name="title">
+            <string>Select tracker</string>
+        </property>
+        <widget class="QLineEdit">
+            <property name="name">
+                <cstring>trackerName_2</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>104</y>
+                    <width>128</width>
+                    <height>23</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>TrackRight</string>
+            </property>
+        </widget>
+        <widget class="QLabel">
+            <property name="name">
+                <cstring>connectedLabel</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>130</y>
+                    <width>128</width>
+                    <height>18</height>
+                </rect>
+            </property>
+            <property name="paletteForegroundColor">
+                <color>
+                    <red>255</red>
+                    <green>0</green>
+                    <blue>0</blue>
+                </color>
+            </property>
+            <property name="text">
+                <string>Not connected</string>
+            </property>
+        </widget>
+        <widget class="QCheckBox">
+            <property name="name">
+                <cstring>Use_Right_Tracker</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>80</y>
+                    <width>130</width>
+                    <height>20</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Right Tracker</string>
+            </property>
+            <property name="checked">
+                <bool>true</bool>
+            </property>
+        </widget>
+        <widget class="QLineEdit">
+            <property name="name">
+                <cstring>trackerName</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>11</x>
+                    <y>48</y>
+                    <width>128</width>
+                    <height>23</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>TrackLeft</string>
+            </property>
+        </widget>
+        <widget class="QCheckBox">
+            <property name="name">
+                <cstring>Use_Left_Tracker</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>20</y>
+                    <width>130</width>
+                    <height>20</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Left Tracker</string>
+            </property>
+            <property name="checked">
+                <bool>true</bool>
+            </property>
+        </widget>
+        <widget class="QPushButton">
+            <property name="name">
+                <cstring>buttonConnectToTracker</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>150</y>
+                    <width>128</width>
+                    <height>31</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Connect</string>
+            </property>
+        </widget>
+    </widget>
+    <widget class="QButtonGroup">
+        <property name="name">
+            <cstring>buttonGroup3</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>10</x>
+                <y>10</y>
+                <width>150</width>
+                <height>120</height>
+            </rect>
+        </property>
+        <property name="sizePolicy">
+            <sizepolicy>
+                <hsizetype>0</hsizetype>
+                <vsizetype>5</vsizetype>
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+            </sizepolicy>
+        </property>
+        <property name="minimumSize">
+            <size>
+                <width>150</width>
+                <height>0</height>
+            </size>
+        </property>
+        <property name="title">
+            <string>Global</string>
+        </property>
+        <widget class="QPushButton">
+            <property name="name">
+                <cstring>buttonHelp</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>60</y>
+                    <width>128</width>
+                    <height>31</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>&amp;Help</string>
+            </property>
+            <property name="accel">
+                <string>F1</string>
+            </property>
+            <property name="autoDefault">
+                <bool>true</bool>
+            </property>
+        </widget>
+        <widget class="QPushButton">
+            <property name="name">
+                <cstring>buttonOk</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>20</y>
+                    <width>128</width>
+                    <height>31</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>&amp;Quit</string>
+            </property>
+            <property name="accel">
+                <string></string>
+            </property>
+            <property name="autoDefault">
+                <bool>true</bool>
+            </property>
+        </widget>
+    </widget>
+    <widget class="QButtonGroup">
+        <property name="name">
+            <cstring>buttonGroup4</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>10</x>
+                <y>140</y>
+                <width>150</width>
+                <height>220</height>
+            </rect>
+        </property>
+        <property name="sizePolicy">
+            <sizepolicy>
+                <hsizetype>0</hsizetype>
+                <vsizetype>5</vsizetype>
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+            </sizepolicy>
+        </property>
+        <property name="minimumSize">
+            <size>
+                <width>150</width>
+                <height>0</height>
+            </size>
+        </property>
+        <property name="title">
+            <string>File</string>
+        </property>
+        <widget class="QPushButton">
+            <property name="name">
+                <cstring>buttonSaveCalibration</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>60</y>
+                    <width>128</width>
+                    <height>31</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Save Calibration</string>
+            </property>
+        </widget>
+        <widget class="QPushButton">
+            <property name="name">
+                <cstring>loadButton</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>20</y>
+                    <width>128</width>
+                    <height>31</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Load Calibration</string>
+            </property>
+        </widget>
+        <widget class="QPushButton">
+            <property name="name">
+                <cstring>SaveCoordButton</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>180</y>
+                    <width>128</width>
+                    <height>31</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Save Coordinates</string>
+            </property>
+        </widget>
+        <widget class="QPushButton">
+            <property name="name">
+                <cstring>LoadCoordButton</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>140</y>
+                    <width>128</width>
+                    <height>31</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Load Coordinates</string>
+            </property>
+        </widget>
+    </widget>
+    <widget class="QGroupBox">
+        <property name="name">
+            <cstring>groupBox4</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>170</x>
+                <y>210</y>
+                <width>310</width>
+                <height>150</height>
+            </rect>
+        </property>
+        <property name="title">
+            <string>World coordinates</string>
+        </property>
+        <widget class="QLabel">
+            <property name="name">
+                <cstring>textLabel1_3</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>113</y>
+                    <width>20</width>
+                    <height>20</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Z:</string>
+            </property>
+        </widget>
+        <widget class="QLabel">
+            <property name="name">
+                <cstring>textLabel1_2</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>83</y>
+                    <width>20</width>
+                    <height>20</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Y:</string>
+            </property>
+        </widget>
+        <widget class="QLabel">
+            <property name="name">
+                <cstring>textLabel1</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>53</y>
+                    <width>20</width>
+                    <height>20</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>X:</string>
+            </property>
+        </widget>
+        <widget class="QLabel">
+            <property name="name">
+                <cstring>textLabel1_4</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>20</y>
+                    <width>90</width>
+                    <height>20</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Left Tracker</string>
+            </property>
+        </widget>
+        <widget class="QLineEdit">
+            <property name="name">
+                <cstring>WorldY</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>30</x>
+                    <y>80</y>
+                    <width>110</width>
+                    <height>23</height>
+                </rect>
+            </property>
+        </widget>
+        <widget class="QLineEdit">
+            <property name="name">
+                <cstring>WorldZ</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>30</x>
+                    <y>110</y>
+                    <width>110</width>
+                    <height>23</height>
+                </rect>
+            </property>
+        </widget>
+        <widget class="QLineEdit">
+            <property name="name">
+                <cstring>WorldY_2</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>180</x>
+                    <y>80</y>
+                    <width>110</width>
+                    <height>23</height>
+                </rect>
+            </property>
+        </widget>
+        <widget class="QLabel">
+            <property name="name">
+                <cstring>textLabel1_2_2</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>160</x>
+                    <y>83</y>
+                    <width>20</width>
+                    <height>20</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Y:</string>
+            </property>
+        </widget>
+        <widget class="QLineEdit">
+            <property name="name">
+                <cstring>WorldX_2</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>180</x>
+                    <y>50</y>
+                    <width>110</width>
+                    <height>23</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string></string>
+            </property>
+        </widget>
+        <widget class="QLabel">
+            <property name="name">
+                <cstring>textLabel1_5</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>160</x>
+                    <y>53</y>
+                    <width>20</width>
+                    <height>20</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>X:</string>
+            </property>
+        </widget>
+        <widget class="QLabel">
+            <property name="name">
+                <cstring>textLabel1_3_2</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>160</x>
+                    <y>113</y>
+                    <width>20</width>
+                    <height>20</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Z:</string>
+            </property>
+        </widget>
+        <widget class="QLineEdit">
+            <property name="name">
+                <cstring>WorldZ_2</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>180</x>
+                    <y>110</y>
+                    <width>110</width>
+                    <height>23</height>
+                </rect>
+            </property>
+        </widget>
+        <widget class="QLabel">
+            <property name="name">
+                <cstring>textLabel1_4_2</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>160</x>
+                    <y>20</y>
+                    <width>93</width>
+                    <height>20</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Right Tracker</string>
+            </property>
+        </widget>
+        <widget class="QLineEdit">
+            <property name="name">
+                <cstring>WorldX</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>30</x>
+                    <y>50</y>
+                    <width>110</width>
+                    <height>23</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string></string>
+            </property>
+        </widget>
+    </widget>
+    <widget class="QLabel">
+        <property name="name">
+            <cstring>textFulcrumCount</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>10</x>
+                <y>610</y>
+                <width>470</width>
+                <height>20</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>World coordinates: 0 Tracker coordinates: 0</string>
+        </property>
+    </widget>
+    <widget class="QGroupBox">
+        <property name="name">
+            <cstring>groupBox3_2</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>330</x>
+                <y>10</y>
+                <width>150</width>
+                <height>190</height>
+            </rect>
+        </property>
+        <property name="title">
+            <string>Calibration</string>
+        </property>
+        <widget class="QPushButton">
+            <property name="name">
+                <cstring>pushButton15</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>60</y>
+                    <width>128</width>
+                    <height>31</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Reset calibration</string>
+            </property>
+        </widget>
+        <widget class="QPushButton">
+            <property name="name">
+                <cstring>Clear_Coord</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>100</y>
+                    <width>128</width>
+                    <height>31</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Clear all data</string>
+            </property>
+        </widget>
+        <widget class="QPushButton">
+            <property name="name">
+                <cstring>pushButton14</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>20</y>
+                    <width>128</width>
+                    <height>31</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Get and add</string>
+            </property>
+        </widget>
+        <widget class="QPushButton">
+            <property name="name">
+                <cstring>pushButton10</cstring>
+            </property>
+            <property name="enabled">
+                <bool>true</bool>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>140</y>
+                    <width>128</width>
+                    <height>31</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Send data</string>
+            </property>
+        </widget>
+    </widget>
+    <widget class="QTextBrowser">
+        <property name="name">
+            <cstring>logBrowser</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>10</x>
+                <y>370</y>
+                <width>470</width>
+                <height>240</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>Log entry</string>
+        </property>
+    </widget>
+</widget>
+<connections>
+    <connection>
+        <sender>buttonOk</sender>
+        <signal>clicked()</signal>
+        <receiver>qt_Tracker_Calibration</receiver>
+        <slot>accept()</slot>
+    </connection>
+    <connection>
+        <sender>buttonConnectToTracker</sender>
+        <signal>clicked()</signal>
+        <receiver>qt_Tracker_Calibration</receiver>
+        <slot>connectSlot()</slot>
+    </connection>
+    <connection>
+        <sender>buttonSaveCalibration</sender>
+        <signal>clicked()</signal>
+        <receiver>qt_Tracker_Calibration</receiver>
+        <slot>saveSlot()</slot>
+    </connection>
+    <connection>
+        <sender>buttonHelp</sender>
+        <signal>clicked()</signal>
+        <receiver>qt_Tracker_Calibration</receiver>
+        <slot>helpSlot()</slot>
+    </connection>
+    <connection>
+        <sender>loadButton</sender>
+        <signal>clicked()</signal>
+        <receiver>qt_Tracker_Calibration</receiver>
+        <slot>loadSlot()</slot>
+    </connection>
+    <connection>
+        <sender>pushButton14</sender>
+        <signal>clicked()</signal>
+        <receiver>qt_Tracker_Calibration</receiver>
+        <slot>GetNAdd_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>pushButton15</sender>
+        <signal>clicked()</signal>
+        <receiver>qt_Tracker_Calibration</receiver>
+        <slot>ResetCalib_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>pushButton10</sender>
+        <signal>clicked()</signal>
+        <receiver>qt_Tracker_Calibration</receiver>
+        <slot>SendDataToTracker_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>LoadCoordButton</sender>
+        <signal>clicked()</signal>
+        <receiver>qt_Tracker_Calibration</receiver>
+        <slot>loadCoord()</slot>
+    </connection>
+    <connection>
+        <sender>SaveCoordButton</sender>
+        <signal>clicked()</signal>
+        <receiver>qt_Tracker_Calibration</receiver>
+        <slot>saveCoord()</slot>
+    </connection>
+    <connection>
+        <sender>Clear_Coord</sender>
+        <signal>clicked()</signal>
+        <receiver>qt_Tracker_Calibration</receiver>
+        <slot>clearAllData()</slot>
+    </connection>
+</connections>
+<includes>
+    <include location="local" impldecl="in implementation">qt_calibration.ui.h</include>
+</includes>
+<slots>
+    <slot>connectSlot()</slot>
+    <slot>startSlot()</slot>
+    <slot>recordSlot()</slot>
+    <slot>cancelSlot()</slot>
+    <slot>saveSlot()</slot>
+    <slot>reloadSlot()</slot>
+    <slot>checkSlot()</slot>
+    <slot>helpSlot()</slot>
+    <slot>loadSlot()</slot>
+    <slot>editSlot()</slot>
+    <slot>NewLogFile()</slot>
+    <slot>log_Raw_Data()</slot>
+    <slot>GetNAdd_clicked()</slot>
+    <slot>ResetCalib_clicked()</slot>
+    <slot>SendDataToTracker_clicked()</slot>
+    <slot>loadCoord()</slot>
+    <slot>saveCoord()</slot>
+    <slot>clearAllData()</slot>
+</slots>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

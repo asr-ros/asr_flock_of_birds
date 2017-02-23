@@ -1,0 +1,19 @@
+<!-- use flock_of_birds_remote.sh for launching or set enviromental variables fisrt  -->
+
+<launch>
+  <machine                                                                                                               
+    name = "FlockOfBirdsServer"                                                                                         
+    address = "i61p124"                                                                                                 
+    user = "$(env USER)"
+    env-loader = "$(find asr_flock_of_birds)/launch/env_remote.sh"
+    default = "false"                                                                                                   
+    />
+
+  <node 
+    name="asr_flock_of_birds" 
+    pkg="asr_flock_of_birds" 
+    type="flock_of_birds_server" 
+    args="--calib-file $(find asr_flock_of_birds)/launch/Rainer_290212.calib --device /dev/ttyS0 -d 1"
+    machine="FlockOfBirdsServer"
+    />
+</launch>

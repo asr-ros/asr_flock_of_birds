@@ -1,0 +1,3 @@
+<launch>
+	<node name="flock_of_birds" pkg="flock_of_birds" type="flock_of_birds_server" args="--calib-file $(find flock_of_birds)/launch/Rainer_290212.calib --device /dev/ttyS0 -d 1"/>
+</launch>

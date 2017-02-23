@@ -1,0 +1,27 @@
+Quit
+	Quits the Tracker Calibration
+Help
+	A hint where you can find this file
+Load Calibration
+	Loads a former saved set of fulcrums (this doesn't send any data to the tracker(s))
+Save Calibration
+	Saves all complete fulcrums (a fulcrum is complete if it has world and tracker coords)
+Load Coordinates
+	Loads a former saved set of fulcrums but not the tracker coords
+Save Coordinates
+	Saves all fulcrums with valid world coords
+Connect
+	Connects to the tracker(s)
+Get and add
+	Gets a pair of tracker and world coordinates (same as a fulcrum) and add it to the list
+Reset Calibration
+	Discards all tracker coords but keeps any world coords intact
+Clear all Data
+	Discards any fulcrums added yet
+Send Data
+	Sends all complete fulcrums to the tracker(s)
+
+Some remarks:
+The file format for calibrations and coordinates ist actually the same, but the tracker coords are
+replaced by zeros if you save/laod coordinates only.
+A complete fulcrum consists of complete world and tracker coordinates.
