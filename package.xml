@@ -2,7 +2,7 @@
 <package>
 	<name>asr_flock_of_birds</name>
 	<version>1.0.0</version>
-        <description>asr_flock_of_birds is a package that is used to track angle and position of a sensor-equipped glove</description>
+        <description>The asr_flock_of_birds package is the driver for Ascension Technology Corp magnet-tracking system "Flock of Birds". It provides the remote server which publishes two 6d posemarker and the nessesary TF from the magnettracking system. It also contains launchfiles and calibration tools for the use of it.</description>
 	<author>Bernhardt Andre, Engelmann Stephan, Giesler Björn, Heller Florian, Jäkel Rainer, Nguyen Trung, Pardowitz Michael, Weckesser Peter, Yi Xie, Zöllner Raoul</author>
 	<maintainer email="asr-ros@lists.kit.edu">Meißner Pascal</maintainer>
 	<license>BSD</license>
