@@ -1,1 +1,0 @@
-./bin/flock_of_birds_server --calib-file /home/staff/jaekel/coding/rtdb/trunk/sensors/FoB/trackerCalibration/CalibFiles/Rainer_290212.calib --device /dev/ttyS0 -d 1
