@@ -6,6 +6,7 @@
 	<author>Bernhardt Andre, Engelmann Stephan, Giesler Björn, Heller Florian, Jäkel Rainer, Nguyen Trung, Pardowitz Michael, Weckesser Peter, Yi Xie, Zöllner Raoul</author>
 	<maintainer email="asr-ros@lists.kit.edu">Meißner Pascal</maintainer>
 	<license>BSD</license>
+	<url type="website">http://wiki.ros.org/asr_flock_of_birds</url>
 	
 	<buildtool_depend>catkin</buildtool_depend>
 	<build_depend>roscpp</build_depend>
