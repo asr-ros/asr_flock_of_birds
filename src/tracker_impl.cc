@@ -302,8 +302,6 @@ void tracker_impl::getTransform(double *data, tf::Transform &transform)
 bool
 tracker_impl::writeNotification(trackerID id, double *raw, double *calibrated)
 { 
-  unsigned int i;
-  unsigned int err;
   // input is X Y Z RZ RY RX
   // output X Y Z RX RY RZ
 

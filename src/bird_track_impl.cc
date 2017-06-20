@@ -210,9 +210,7 @@ BirdTrack_impl::get_rawposangles(int whichtracker, int *raw){
     }
 	
     short i;
-    short realdata[6];
     short shortdata[12];
-    float floatdata[6];
     unsigned char rs232tofbbcmd, pos_angl_cmd[4];
     char birddata[12]; //Bird-Data-Buffer
 	
@@ -220,17 +218,14 @@ BirdTrack_impl::get_rawposangles(int whichtracker, int *raw){
 	birddata[i] = 0;
 	shortdata[i] = 0;
     }
-    for (i=0; i<6; i++) {
-	realdata[i] = 0;
-	floatdata[i] = 0.0;
-    }
+ 
 	
 	
     if (whichtracker == LEFT_TRACKER_ID)
-	rs232tofbbcmd = (unsigned char)(0xF0 | LEFT_TRACKER_ID + 1);
+	rs232tofbbcmd = (unsigned char)(0xF0 | (LEFT_TRACKER_ID + 1));
 		
     else if (whichtracker == RIGHT_TRACKER_ID)
-	rs232tofbbcmd = (unsigned char)(0xF0 | RIGHT_TRACKER_ID + 1);
+	rs232tofbbcmd = (unsigned char)(0xF0 | (RIGHT_TRACKER_ID + 1));
 	
     else{
 	cout << "Falsche id abgefragt: " << whichtracker << endl;
